@@ -34,6 +34,10 @@ from 0v to 5v in order to keep the code simple and therefore faster.
 
 ## SWITCHES TO CONTROL BEHAVIOR ##
 
+In addition to the power switch (located on the side of the enclosure), there
+are three slide switches which provide control over several different modes of
+operation.
+
 <img alt="Photo" width="480" height="640" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s512/IMG_2039.JPG"/>
 
 * Note Mode.  Instead of allowing smooth and infinite variation in pitch,
