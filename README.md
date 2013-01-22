@@ -51,6 +51,14 @@ NOTE: In pushbutton mode (non-continuous), the RGB LED will illuminate even
 when the button is not pressed.  This effectively provides a silent but still
 interesting mode of operation (light/color only).
 
+## PHOTOS ##
+
+https://picasaweb.google.com/dcheckoway/UltrasonicTheremin?authuser=0&authkey=Gv1sRgCJalsbD6rKvfEg&feat=directlink
+
+## VIDEOS ##
+
+Coming soon
+
 ## PARTS LIST ##
 
 <pre>
@@ -81,11 +89,3 @@ Qty	Description								Part Number			Link
 1	560 Ohm resistor						S560CACT-ND			http://www.digikey.com/product-detail/en/61303211821/S560CACT-ND
 1	100 Ohm resistor											http://www.oddwires.com/100-ohm-1-4w-0-25w-1-metal-film-resistor-25-pack/
 </pre>
-
-## PHOTOS ##
-
-https://picasaweb.google.com/dcheckoway/UltrasonicTheremin?authuser=0&authkey=Gv1sRgCJalsbD6rKvfEg&feat=directlink
-
-## VIDEOS ##
-
-Coming soon
