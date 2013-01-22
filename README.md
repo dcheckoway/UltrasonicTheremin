@@ -1,8 +1,8 @@
 # ULTRASONIC THEREMIN #
 
-Author: Dan Checkoway
-Version: 1.0
-Date: January 22, 2013
+Author: Dan Checkoway  
+Version: 1.0  
+Date: January 22, 2013  
 
 This gizmo produces light and sound that varies as an object (i.e. your hand)
 moves closer or further away from the unit.  It utilizes an ultrasonic range
