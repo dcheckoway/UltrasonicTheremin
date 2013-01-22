@@ -8,14 +8,14 @@ Date: January 22, 2013
 
 <img alt="Photo" width="96" height="128" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s128/IMG_2039.JPG"/>
 
-This gizmo produces light and sound that varies as an object (i.e. your hand)
-moves closer or further away from the unit.  It utilizes an ultrasonic range
-sensor (ping) to determine distance, from which a corresponding frequency is
-calculated.  The active range is between 2" and 18" which equates to a two
-octave change in pitch.  Any distance closer or beyond that is coerced into
-range prior to calculating the frequency.  The closer the distance, the higher
-the pitch.  There is also an RGB LED which changes color smoothly proportionate
-to the distance.
+This gizmo was a gift I made for my nephew.  It produces light and sound that
+varies as an object (i.e. your hand) moves closer or further away from the
+unit.  It utilizes an ultrasonic range sensor (ping) to determine distance,
+from which a corresponding frequency is calculated.  The active range is
+between 2" and 18" which equates to a two octave change in pitch.  Any
+distance closer or beyond that is coerced into range prior to calculating the
+frequency.  The closer the distance, the higher the pitch.  There is also an
+RGB LED which changes color smoothly proportionate to the distance.
 
 ## LIGHT AND SOUND EFFECTS ##
 
