@@ -6,7 +6,7 @@ Date: January 22, 2013
 
 <img alt="Photo" width="128" height="96" src="https://lh3.googleusercontent.com/-z__qlaC2LE4/UP5oyxflphI/AAAAAAAAFG8/UjlVUFarNF0/s128/IMG_2037.JPG"/>
 
-<img alt="Photo" width="128" height="96" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s128/IMG_2039.JPG"/>
+<img alt="Photo" width="96" height="128" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s128/IMG_2039.JPG"/>
 
 This gizmo produces light and sound that varies as an object (i.e. your hand)
 moves closer or further away from the unit.  It utilizes an ultrasonic range
