@@ -4,11 +4,11 @@ Author: Dan Checkoway
 Version: 1.0  
 Date: January 22, 2013
 
-<img border="1" alt="Photo 1" width="128" height="96" src="https://lh3.googleusercontent.com/-z__qlaC2LE4/UP5oyxflphI/AAAAAAAAFG8/UjlVUFarNF0/s128/IMG_2037.JPG"/>
+<img alt="Photo 1" width="128" height="96" src="https://lh3.googleusercontent.com/-z__qlaC2LE4/UP5oyxflphI/AAAAAAAAFG8/UjlVUFarNF0/s128/IMG_2037.JPG"/>
 
-<img border="1" alt="Photo 2" width="96" height="128" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s128/IMG_2039.JPG"/>
+<img alt="Photo 2" width="96" height="128" src="https://lh4.googleusercontent.com/-EWhWCNxlkJQ/UP5pacUwSzI/AAAAAAAAFHc/unhBAlgL7wg/s128/IMG_2039.JPG"/>
 
-This gizmo was a gift I made for my nephew.  It produces light and sound that
+This gizmo is a gift I made for my nephew.  It produces light and sound that
 varies as an object (i.e. your hand) moves closer or further away from the
 unit.  It utilizes an ultrasonic range sensor (ping) to determine distance,
 from which a corresponding frequency is calculated.  The active range is
