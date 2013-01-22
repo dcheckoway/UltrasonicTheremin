@@ -59,9 +59,9 @@ Qty	Description								Part Number			Link
 1	Ultrasonic Ranging Module				HC-SR04				http://www.amazon.com/Ultrasonic-Module-HC-SR04-Distance-Arduino/dp/B004U8TOE6
 1	Speaker (parted out of old unused headphones)
 1	RGB LED (common anode)										http://www.amazon.com/microtivity-IL612-Diffused-Controllable-Common/dp/B006S21SQO
-1	Slide Switch (DPDT)						SW116-ND			http://www.digikey.com/product-detail/en/GF-126-3011/SW116-ND
-1	Slide Switch (SPDT)						SW104-ND			http://www.digikey.com/product-detail/en/GF-624-6014/SW104-ND
-2	Slide Switch (SPST)						SW148-ND			http://www.digikey.com/product-detail/en/GF-1123-0009/SW148-ND
+1	DPDT Slide Switch						SW116-ND			http://www.digikey.com/product-detail/en/GF-126-3011/SW116-ND
+1	SPDT Slide Switch						SW104-ND			http://www.digikey.com/product-detail/en/GF-624-6014/SW104-ND
+2	SPST Slide Switch						SW148-ND			http://www.digikey.com/product-detail/en/GF-1123-0009/SW148-ND
 1	Momentary Pushbutton					275-0646			http://www.radioshack.com/product/index.jsp?productId=2062510
 1	Printed Circuit Board					276-150				http://www.radioshack.com/product/index.jsp?productId=2102845
 1	Microcontroller							ATMEGA328P-PU-ND	http://www.digikey.com/product-detail/en/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589
