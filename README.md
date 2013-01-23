@@ -112,13 +112,13 @@ HobbyKing, and it's even cheaper at $2.75.  When you factor in shipping, it's
 probably cheaper to go with Amazon Prime, but hey...now you have two options.
 
 The RGB LEDs can get pretty expensive if you buy just one -- but if you want
-to buy them in quantity you can drive the price way down.  Below I've listed
-a link for a 12-pack, so it's not like you have to invest in hundreds of these
+to buy them in quantity you can drive the price way down.  I've listed a link
+for a 12-pack, so it's not like you have to invest in hundreds of these
 things.  You can probably think of at least 12 uses for RGB LEDs.  If not,
 think harder.  Just keep in mind that if you get a clear LED (that's what I
 had lying around), you probably want to diffuse it to make it less directional.
 I did that on mine by just scuffing it up with a ScotchBrite pad, which worked
-great.  The link I've listed below is for LEDs that already come diffused.
+great.  The link I've listed is for LEDs that already come diffused.
 
 Speaker...I was surprised by how expensive speakers can be.  You're probably
 thinking I'm a serious cheapskate at this point.  Ok, maybe.  But I didn't
