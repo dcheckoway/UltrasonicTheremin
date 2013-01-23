@@ -61,9 +61,9 @@ interesting mode of operation (light/color only).
 
 https://picasaweb.google.com/dcheckoway/UltrasonicTheremin?authuser=0&authkey=Gv1sRgCJalsbD6rKvfEg&feat=directlink
 
-## VIDEOS ##
+## DEMO VIDEO ##
 
-Coming soon
+<iframe width="560" height="315" src="http://www.youtube.com/embed/1QxQKjxNeSs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## PARTS LIST ##
 
