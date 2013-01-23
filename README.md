@@ -70,7 +70,7 @@ http://youtu.be/1QxQKjxNeSs
 <pre>
 Qty	Description								Part Number			Link
 1	Project Box								270-1803			http://www.radioshack.com/product/index.jsp?productId=2062281
-1	Ultrasonic Ranging Module				HC-SR04				http://www.amazon.com/Ultrasonic-Module-HC-SR04-Distance-Arduino/dp/B004U8TOE6
+1	Ultrasonic Ranging Module				HC-SR04				http://www.hobbyking.com/hobbyking/store/__31136__Ultrasonic_Module_HC_SR04_Arduino.html
 1	Speaker (parted out of old unused headphones)
 1	RGB LED (common anode)										http://www.amazon.com/microtivity-IL612-Diffused-Controllable-Common/dp/B006S21SQO
 1	DPDT Slide Switch						SW116-ND			http://www.digikey.com/product-detail/en/GF-126-3011/SW116-ND
@@ -95,3 +95,57 @@ Qty	Description								Part Number			Link
 1	560 Ohm resistor						S560CACT-ND			http://www.digikey.com/product-detail/en/61303211821/S560CACT-ND
 1	100 Ohm resistor											http://www.oddwires.com/100-ohm-1-4w-0-25w-1-metal-film-resistor-25-pack/
 </pre>
+
+I had a good number of the parts lying around already (resistors, capacitors,
+voltage regulators, crystals, etc.), so my out of pocket cost to make this
+was insignificant.  The two components which can be expensive are the
+ultrasonic ranging module and the RGB LED, but I've found some uber cheap
+sources for them.
+
+Originally I bought my HC-SR04 ping sensor from Amazon Prime for $5.92, which
+is probably the cheapest source (assuming you have a Prime account) all things
+considered.  That price includes 2-day shipping...hard to beat.
+
+But a week or so later, while geeking out and researching Arduino hacks for RC
+stuff, I accidentally bumped into the fact that you can buy the HC-SR04 from
+HobbyKing, and it's even cheaper at $2.75.  When you factor in shipping, it's
+probably cheaper to go with Amazon Prime, but hey...now you have two options.
+
+The RGB LEDs can get pretty expensive if you buy just one -- but if you want
+to buy them in quantity you can drive the price way down.  Below I've listed
+a link for a 12-pack, so it's not like you have to invest in hundreds of these
+things.  You can probably think of at least 12 uses for RGB LEDs.  If not,
+think harder.  Just keep in mind that if you get a clear LED (that's what I
+had lying around), you probably want to diffuse it to make it less directional.
+I did that on mine by just scuffing it up with a ScotchBrite pad, which worked
+great.  The link I've listed below is for LEDs that already come diffused.
+
+Speaker...I was surprised by how expensive speakers can be.  You're probably
+thinking I'm a serious cheapskate at this point.  Ok, maybe.  But I didn't
+want to invest a ton of cash in this.  Originally I was going to use a little
+piezo buzzer, but it didn't really have the oomph I was looking for.  I had a
+crappy old pair of headphones lying around, and I figured maybe the speakers
+in there would work for this...and they worked great.
+
+Enclosure...this is the box I wanted to use originally:
+http://www.digikey.com/product-detail/en/221I,BK/SR221-IB-ND/304246
+The built-in 9V battery compartment would have kicked butt.  But that box has
+screw posts in really inconvenient locations.  Serpac actually makes boards
+intended for these enclosures, manufactured to fit exactly, but I had already
+gotten pretty far down the line soldering this thing up on the 276-150 board.
+So I caved and just got a Radio Shack enclosure.  I'm sure people who do this
+more often than I do know of cheaper/better sources for enclosures.
+
+Jumper wires...I went a little overkill, installing male header pins on the
+main board, and then running female-to-female jumpers up to a connecting
+board on the cover panel.  Totally unnecessary, but I wanted (a) to be able
+to remove the cover panel completely (I'm not sure why, but I wanted to), and
+(b) to be able to reassign connections easily in case I changed the design
+(not likely, but you never know).  So you can definitely save by just wiring
+directly.
+
+Other areas where you can skimp...you don't need an IC socket for the chip
+unless you plan to remove it.  So you can save a few cents soldering the chip
+directly to the board.  Especially considering the fact that I put an FTDI
+header on there, it makes no sense to have *both* FTDI and a removable chip.
+But hey, that's how I roll.
