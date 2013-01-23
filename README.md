@@ -136,6 +136,13 @@ gotten pretty far down the line soldering this thing up on the 276-150 board.
 So I caved and just got a Radio Shack enclosure.  I'm sure people who do this
 more often than I do know of cheaper/better sources for enclosures.
 
+The crappy thing about the Radio Shack boxes is that they don't have any
+provision for holding a battery.  I probably should have ordered a cheap
+battery clip from Digi-Key or something, but I didn't.  So I fabricated my
+own using some stuff I had lying around the shop.  You could probably just
+jam some foam in there and it would be fine, but my nephew might wang this
+thing around, so I wanted it to be secure.  More operation overkill.
+
 Jumper wires...I went a little overkill, installing male header pins on the
 main board, and then running female-to-female jumpers up to a connecting
 board on the cover panel.  Totally unnecessary, but I wanted (a) to be able
