@@ -32,7 +32,7 @@ Note the forward voltage specs on your particular LED to help you determine
 the appropriate resistor rating.  We rely on being able to vary the PWM output
 from 0v to 5v in order to keep the code simple and therefore faster.
 
-## SWITCHES TO CONTROL BEHAVIOR ##
+## MODES OF OPERATION ##
 
 In addition to the power switch (located on the side of the enclosure), there
 are three slide switches which provide control over several different modes of
