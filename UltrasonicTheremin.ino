@@ -118,6 +118,7 @@ void setup() {
 void loop() {
   uint32_t usec = ping();
   if (usec != 0) {
+    // Integrate the sample into our sliding average
     averager.integrate(constrain(usec, PING_MIN, PING_MAX));
   }
   
@@ -128,20 +129,26 @@ void loop() {
   float rangeFraction = max(0.0, (inches - DMIN) / (DMAX - DMIN));
   float numHalfSteps = max(0.0, TOTAL_HALF_STEPS * (1.0 - rangeFraction));
 
-  // The low note in the range is determined by the key select switch.
+  // The low note in the range is determined by the key select switch,
+  // which utilizes an internal pull-up resistor in the OFF position and
+  // will be pulled LOW in the ON position.
   // By default we use low C.  If the switch is on, we use middle C.
   float lowNoteFreq = digitalRead(KEY_SELECT_PIN) ? LOW_C : MIDDLE_C;
   
   // Calculate the tone frequency...low note plus the number of half steps
   uint16_t freq = (uint16_t)(lowNoteFreq * pow(ABASE, numHalfSteps));
   
-  // If we're in note mode, then "snap" to the nearest semitone
+  // If we're in note mode, then "snap" to the nearest semitone.
+  // Same deal with this switch...we use the internal pull-up resistor,
+  // so it reads HIGH in the OFF position and LOW in the ON position.
   if (digitalRead(NOTE_MODE_PIN) == LOW) {
     freq = nearestNoteFrequency(freq);
   }
 
   // Calculate RGB based on where we are in the range
   calculateRGB(rangeFraction);
+
+  // Update the RGB LED (common anode, so invert)
   analogWrite(RED_PIN, 255 - round(r * 255.0));
   analogWrite(GREEN_PIN, 255 - round(g * 255.0));
   analogWrite(BLUE_PIN, 255 - round(b * 255.0));
@@ -212,9 +219,12 @@ void calculateRGB(float rangeFraction) {
 }
 
 // Invoke the ultrasonic ranging module to determine distance.  This returns
-// a value in usec which indicates the round-trip ping time in microseconds.
+// a value indicating the round-trip ping time in microseconds.  Originally
+// I used the NewPing library for this, but that utilized interrupts which
+// interfered with tone() and/or PWM, I can't remember which (maybe both).
+// I settled on this uber-simple implementation which seems to work fine.
 uint32_t ping() {
-  uint32_t raw;
+  uint32_t usec;
   int attempts = 3;
   while (attempts) {
     // Ensure that the trigger pin is low before starting
@@ -223,14 +233,18 @@ uint32_t ping() {
     digitalWrite(TRIGGER_PIN, HIGH);
     delayMicroseconds(10);
     digitalWrite(TRIGGER_PIN, LOW);
-    raw = pulseIn(ECHO_PIN, HIGH, 10000);
-    if (raw) {
-      break;
+    // Use a timeout here so we don't wait forever
+    usec = pulseIn(ECHO_PIN, HIGH, 10000);
+    // Check for zero, in case it timed out
+    if (usec) {
+      return usec;
     }
+    // Wait a tiny bit and then try again
     delayMicroseconds(10);
     --attempts;
   }
-  return raw;
+  // No joy, just return zero, we don't want to hold up the caller
+  return 0;
 }
 
 // Semitone frequencies, rounded to the nearest integer value.  These are
@@ -246,6 +260,7 @@ const uint16_t NOTES[] = {
   33, 31, 29, 28
 };
 
+// This just saves a math calculation at runtime
 const uint16_t NUM_NOTES = sizeof(NOTES) / sizeof(NOTES[0]);
 
 // Return the semitone note frequency nearest to the given arbitrary frequency.
